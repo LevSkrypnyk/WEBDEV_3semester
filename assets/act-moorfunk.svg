@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Platzhalter für ein Bild">
+  <defs>
+    <!-- Abgerundete Bildfläche: alles wird darauf zugeschnitten -->
+    <clipPath id="flaeche">
+      <rect width="800" height="450" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#flaeche)">
+    <!-- Hintergrund -->
+    <rect width="800" height="450" fill="#eef0f3"/>
+
+    <!-- Sonne -->
+    <circle cx="655" cy="112" r="36" fill="#d3d8df"/>
+
+    <!-- Hinterer Berg: hoch und breit, leicht gerundete Spitze -->
+    <path d="M150 450 L470 171 Q505 140 540 171 L860 450 Z" fill="#c5cbd3"/>
+
+    <!-- Kleiner Berg rechts -->
+    <path d="M520 450 L700 318 Q725 300 746 318 L900 450 Z" fill="#b7bec8"/>
+
+    <!-- Vorderer Berg links: dunkler, wirkt näher -->
+    <path d="M-60 450 L227 236 Q255 215 283 236 L570 450 Z" fill="#a9b1bc"/>
+  </g>
+
+  <!-- Feiner Rahmen -->
+  <rect x="1" y="1" width="798" height="448" rx="20" fill="none" stroke="#d3d8df" stroke-width="2"/>
+
+  <!-- Beschriftung -->
+  <rect x="24" y="24" width="72" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
+  <text x="60" y="47" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="600" fill="#7d8591" text-anchor="middle">Bild</text>
+</svg>
