@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein leckeres Rezept zum Nachkochen.">
+
+    <title>Mein Rezept</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script src="js/rezept.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">My Recipe</a>
+
+            <nav class="navigation" aria-label="Hauptnavigation">
+                <a href="#ingredients">Zutaten</a>
+                <a href="#preparation">Zubereitung</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Mein Lieblingsrezept</h1>
+                <p class="hero__description">
+                    Eine kurze Beschreibung des Gerichts.
+                </p>
+
+                <img
+                    src="images/hero.jpg"
+                    alt="Bild des Gerichts"
+                    class="hero__image"
+                >
+            </div>
+        </section>
+
+        <!-- Ingredients -->
+        <section class="ingredients" id="ingredients">
+            <div class="container">
+
+                <h2>Zutaten</h2>
+
+                <!-- Portion Calculator -->
+                <div class="portion-calculator">
+                    <span>Portionen</span>
+
+                    <button type="button" id="portion-minus" aria-label="Portionen reduzieren">−</button>
+                    <output id="portion-count" aria-live="polite">2</output>
+                    <button type="button" id="portion-plus" aria-label="Portionen erhöhen">+</button>
+                </div>
+
+                <!-- Ingredient Checklist -->
+                <ul class="ingredients__list" id="ingredients-list">
+                    <!-- Wird mit JavaScript gefüllt -->
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Preparation -->
+        <section class="preparation" id="preparation">
+            <div class="container">
+
+                <h2>Zubereitung</h2>
+
+                <ol class="preparation__steps" id="preparation-steps">
+                    <!-- Wird mit JavaScript gefüllt -->
+                </ol>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 My Recipe</p>
+        </div>
+    </footer>
+
+</body>
+</html>
